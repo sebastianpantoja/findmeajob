@@ -21,8 +21,8 @@ public class Scrapper {
     String city;        // Ciudad en donde se buscarán ofertas
     String domain;      // Dominio del sitio web sobre el cual se está realizando WebScrapping
     String offerUrlToken;           // Expresión clave para identificar las URL dentro del HTML de las páginas de ofertas
-    String offerDataToken;          // Expresión clave para identificar los datos de las ofertas de trabajo
-    String offerDataTypeToken;      // Expresión clave para identificar el tipo de los datos de las ofertas de trabajo
+    String offerDataToken;          // Expresión clave para identificar los datos de las ofertas de trabajo dentro del HTML de la página de la oferta
+    String offerDataTypeToken;      // Expresión clave para identificar el tipo de los datos de las ofertas de trabajo dentro del HTML de la página de la oferta
     
     public Scrapper(String _url, String _job, String _city, String _domain){
         this.url = _url;
@@ -31,7 +31,7 @@ public class Scrapper {
         this.domain = _domain;
     }
     
-    // Método para obtener el HTML de la página inicial
+    // Método para obtener el HTML de las páginas de ofertas
     
     public Document getScrap(){
         Document scrap = null;
