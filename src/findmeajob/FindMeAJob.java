@@ -25,7 +25,7 @@ public class FindMeAJob {
     public static void main(String[] args) throws IOException{
         
         SupportTools supportTools = new SupportTools();
-        ComputrabajoScrapper cpScrapper = new ComputrabajoScrapper("Panadero", "bogota dc");
+        ComputrabajoScrapper cpScrapper = new ComputrabajoScrapper("Panadero", "barranquilla");
         
         ArrayList<List> offersData = cpScrapper.scrappingAll();
         System.out.println(offersData.size());
